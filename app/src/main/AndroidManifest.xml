@@ -26,7 +26,7 @@
         <activity android:name=".votecategory.VoteCategory" />
         <activity android:name=".Dashboard" />
         <activity android:name=".Registration" />
-        <activity android:name=".PhoneVerification" />
+ 
         <activity android:name=".Welcome" />
         <activity android:name=".MainActivity">
 
