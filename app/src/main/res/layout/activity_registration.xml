@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration"
+    android:background="#14ccc4"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:padding="15dp"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:text="Here's your first step with us!"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                app:lottie_rawRes="@raw/registration"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="First Name"
+                    android:textColor="#14ccc4"
+                    android:textSize="15sp"
+                    android:paddingLeft="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:hint="Enter first name"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Middle Name"
+                    android:textColor="#14ccc4"
+                    android:textSize="15sp"
+                    android:paddingLeft="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/mname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:hint="Enter middle name"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name"
+                    android:textColor="#14ccc4"
+                    android:textSize="15sp"
+                    android:paddingLeft="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:hint="Enter last name"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:textColor="#14ccc4"
+                    android:textSize="15sp"
+                    android:paddingLeft="5dp"
+                    />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/regage"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:hint="Enter age"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="AAdhaar no."
+                    android:textColor="#14ccc4"
+                    android:textSize="15sp"
+                    android:paddingLeft="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/regaadhaar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:hint="Enter aadhaar no."
+                    android:inputType="number"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textColor="#14ccc4"
+                    android:textSize="15sp"
+                    android:paddingLeft="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/regaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:hint="Enter address"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="State"
+                    android:textColor="#14ccc4"
+                    android:textSize="15sp"
+                    android:paddingLeft="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/regstate"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:hint="Enter pincode"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="City"
+                    android:textColor="#14ccc4"
+                    android:textSize="15sp"
+                    android:paddingLeft="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/regdistrict"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:hint="Enter pincode"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/black"
+            app:cardCornerRadius="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#068a83"
+                >
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-42dp"
+            android:background="@color/white"
+            app:cardCornerRadius="10dp"
+            >
+
+            <Button
+                android:id="@+id/btn_verify"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="Submit"
+                android:textColor="#14ccc4"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

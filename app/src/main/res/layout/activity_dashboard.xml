@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".Dashboard">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dashboard"
+                    android:textColor="#5E5E5E"
+                    android:textSize="24dp" />
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="6dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:background="#14ccc4">
+
+                </View>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="this vacation time for you discription."
+                android:textColor="#5E5E5E"
+                android:textSize="18dp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_gradient_maths"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Welcome !"
+                            android:textColor="#fff"
+                            android:textSize="18dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="28dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_baseline_cloud_24" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="user name"
+                            android:textColor="#fff"
+                            android:textSize="24dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="21 C"
+                                android:textColor="#fff"
+                                android:textSize="18dp" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sun"
+                                android:textColor="#ffff" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20 C"
+                                android:textColor="#ffff"
+                                android:textSize="18dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mon"
+                                android:textColor="#ffff" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20 C"
+                                android:textColor="#ffff"
+                                android:textSize="18dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tue"
+                                android:textColor="#ffff" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20 C"
+                                android:textColor="#ffff"
+                                android:textSize="18dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Wed"
+                                android:textColor="#ffff" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20 C"
+                                android:textColor="#ffff"
+                                android:textSize="18dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Thu"
+                                android:textColor="#ffff" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20 C"
+                                android:textColor="#ffff"
+                                android:textSize="18dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Fri"
+                                android:textColor="#ffff" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20 C"
+                                android:textColor="#ffff"
+                                android:textSize="18dp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="start new vacation"
+                    android:textColor="#5E5E5E"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:background="#7a8b8b8b"></View>
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--Example with RelativeLayout and Gradient Drawable -->
+                    <!-- for Recycler view use any of the layout as model-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="10dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            android:background="@drawable/profile_gradient"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textViewSub1Title"
+                                android:textSize="20dp"
+                                android:textColor="#000"
+                                android:text="Profile"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Click here\nto visit profile page "
+                                android:layout_gravity="start|center"/>
+
+                            <ImageView
+                                android:layout_gravity="top|end"
+                                android:layout_width="100dp"
+                                android:layout_height="80dp"
+                                android:maxHeight="90dp"
+                                android:src="@drawable/j" />
+
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="20dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            android:background="@drawable/vote_gradient"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"
+                                android:textColor="#000"
+                                android:text="Start Voting"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Click here\nto start voting "
+                                android:layout_gravity="start|center"/>
+
+                            <ImageView
+                                android:layout_gravity="top|end"
+                                android:layout_width="100dp"
+                                android:layout_height="80dp"
+                                android:maxHeight="90dp"
+                                android:src="@drawable/j" />
+
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="20dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            android:background="@drawable/g3"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"
+                                android:textColor="#000"
+                                android:text="Maths"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Study nature, love nature,\nclose to nature"
+                                android:layout_gravity="start|center"/>
+
+                            <ImageView
+                                android:layout_gravity="top|end"
+                                android:layout_width="100dp"
+                                android:layout_height="80dp"
+                                android:maxHeight="90dp"
+                                android:src="@drawable/j" />
+
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="20dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            android:background="@drawable/profile_gradient"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"
+                                android:textColor="#000"
+                                android:text="Maths"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Study nature, love nature,\nclose to nature"
+                                android:layout_gravity="start|center"/>
+
+                            <ImageView
+                                android:layout_gravity="top|end"
+                                android:layout_width="100dp"
+                                android:layout_height="80dp"
+                                android:maxHeight="90dp"
+                                android:src="@drawable/j" />
+
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="20dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            android:background="@drawable/profile_gradient"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"
+                                android:textColor="#000"
+                                android:text="Maths"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Study nature, love nature,\nclose to nature"
+                                android:layout_gravity="start|center"/>
+
+                            <ImageView
+                                android:layout_gravity="top|end"
+                                android:layout_width="100dp"
+                                android:layout_height="80dp"
+                                android:maxHeight="90dp"
+                                android:src="@drawable/j" />
+
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="20dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            android:background="@drawable/profile_gradient"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"
+                                android:textColor="#000"
+                                android:text="Maths"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Study nature, love nature,\nclose to nature"
+                                android:layout_gravity="start|center"/>
+
+                            <ImageView
+                                android:layout_gravity="top|end"
+                                android:layout_width="100dp"
+                                android:layout_height="80dp"
+                                android:maxHeight="90dp"
+                                android:src="@drawable/j" />
+
+                        </FrameLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </ScrollView>
+
+</LinearLayout>
