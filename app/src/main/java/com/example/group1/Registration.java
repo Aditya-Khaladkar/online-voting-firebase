@@ -143,7 +143,7 @@ public class Registration extends AppCompatActivity {
                                     }
                                 });
                             }
-                            HashMap hashMap1 = new HashMap();
+                            HashMap<String, Object> hashMap1 = new HashMap<>();
                             hashMap1.put("aadhaar", aadhaar);
                             FirebaseDatabase.getInstance().getReference("Verified Aadhaar")
                                     .child(FirebaseAuth.getInstance().getCurrentUser().getUid())

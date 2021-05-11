@@ -12,7 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".helpcenter.HelpCenter"></activity>
+        <activity android:name=".helpcenter.HelpCenter">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
         <activity android:name=".VoteSuccess" />
         <activity android:name=".livecounting.LiveCounting" />
         <activity android:name=".candidate4.Candidate4" />
@@ -30,11 +38,7 @@
         <activity android:name=".Welcome" />
         <activity android:name=".MainActivity">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
     </application>

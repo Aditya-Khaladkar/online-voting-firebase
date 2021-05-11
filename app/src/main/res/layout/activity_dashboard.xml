@@ -20,7 +20,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Group 1"
+                android:text="Dashboard"
                 android:textColor="#5E5E5E"
                 android:textSize="24dp" />
 
@@ -90,6 +90,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:id="@+id/textview"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="user name"
@@ -291,6 +292,7 @@
                 android:layout_marginTop="10dp">
 
                 <FrameLayout
+                    android:id="@+id/layout_profile"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:minHeight="100dp"
@@ -300,7 +302,6 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textViewSub1Title"
                         android:textSize="20dp"
                         android:textColor="#000"
                         android:text="Profile"/>
@@ -316,7 +317,7 @@
                         android:layout_width="100dp"
                         android:layout_height="80dp"
                         android:maxHeight="90dp"
-                        android:src="@drawable/j" />
+                        android:src="@drawable/profile2" />
 
                 </FrameLayout>
             </androidx.cardview.widget.CardView>
@@ -329,6 +330,7 @@
                 android:layout_marginTop="20dp">
 
                 <FrameLayout
+                    android:id="@+id/layout_campaign"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:minHeight="100dp"
@@ -340,7 +342,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:textColor="#000"
-                        android:text="Start Voting"/>
+                        android:text="Campaign"/>
                     <TextView
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
@@ -365,6 +367,7 @@
                 android:layout_marginTop="20dp">
 
                 <FrameLayout
+                    android:id="@+id/layout_vote"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:minHeight="100dp"
@@ -376,7 +379,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:textColor="#000"
-                        android:text="Maths"/>
+                        android:text="Vote"/>
                     <TextView
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
@@ -401,6 +404,7 @@
                 android:layout_marginTop="20dp">
 
                 <FrameLayout
+                    android:id="@+id/layout_live"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:minHeight="100dp"
@@ -412,7 +416,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:textColor="#000"
-                        android:text="Maths"/>
+                        android:text="Live Counting"/>
                     <TextView
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
@@ -437,6 +441,7 @@
                 android:layout_marginTop="20dp">
 
                 <FrameLayout
+                    android:id="@+id/layout_result"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:minHeight="100dp"
@@ -448,7 +453,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:textColor="#000"
-                        android:text="Maths"/>
+                        android:text="Result"/>
                     <TextView
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
@@ -473,6 +478,7 @@
                 android:layout_marginTop="20dp">
 
                 <FrameLayout
+                    android:id="@+id/layout_help"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:minHeight="100dp"
@@ -484,7 +490,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:textColor="#000"
-                        android:text="Maths"/>
+                        android:text="Help"/>
                     <TextView
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
@@ -501,6 +507,43 @@
 
                 </FrameLayout>
             </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardPreventCornerOverlap="true"
+            android:layout_marginTop="20dp">
+
+            <FrameLayout
+                android:id="@+id/layout_about"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="100dp"
+                android:background="@drawable/profile_gradient"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:text="About"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Study nature, love nature,\nclose to nature"
+                    android:layout_gravity="start|center"/>
+
+                <ImageView
+                    android:layout_gravity="top|end"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:maxHeight="90dp"
+                    android:src="@drawable/j" />
+
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 
