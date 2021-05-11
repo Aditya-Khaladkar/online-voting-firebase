@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -28,6 +29,7 @@ import java.util.concurrent.TimeUnit;
 public class PhoneVerification extends AppCompatActivity {
     Button btn_phone;
     EditText number;
+    ProgressBar progressBar;
     FirebaseFirestore firebaseFirestore;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,10 +39,12 @@ public class PhoneVerification extends AppCompatActivity {
         btn_phone=findViewById(R.id.btn_phone);
         number=findViewById(R.id.number);
         firebaseFirestore=FirebaseFirestore.getInstance();
+        progressBar = findViewById(R.id.progressBar);
 
         btn_phone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                progressBar.setVisibility(View.VISIBLE);
                 String phoneNumber = number.getText().toString();
                 if (phoneNumber.isEmpty())
                     number.setError("This Filed Can't be empty");

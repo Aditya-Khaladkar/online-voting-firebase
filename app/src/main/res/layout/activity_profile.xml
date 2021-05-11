@@ -210,7 +210,6 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="20dp"
                                 android:text="firstname"
-                                android:textColor="#14ccc4"
                                 android:textSize="15sp"/>
                         </LinearLayout>
 

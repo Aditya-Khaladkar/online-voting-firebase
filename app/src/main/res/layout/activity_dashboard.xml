@@ -90,7 +90,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textview"
+                        android:id="@+id/firstname"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="user name"
@@ -350,13 +350,6 @@
                         android:text="Click here\nto start voting "
                         android:layout_gravity="start|center"/>
 
-                    <ImageView
-                        android:layout_gravity="top|end"
-                        android:layout_width="100dp"
-                        android:layout_height="80dp"
-                        android:maxHeight="90dp"
-                        android:src="@drawable/j" />
-
                 </FrameLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -386,13 +379,6 @@
                         android:layout_height="wrap_content"
                         android:text="Study nature, love nature,\nclose to nature"
                         android:layout_gravity="start|center"/>
-
-                    <ImageView
-                        android:layout_gravity="top|end"
-                        android:layout_width="100dp"
-                        android:layout_height="80dp"
-                        android:maxHeight="90dp"
-                        android:src="@drawable/j" />
 
                 </FrameLayout>
             </androidx.cardview.widget.CardView>
@@ -424,13 +410,6 @@
                         android:text="Study nature, love nature,\nclose to nature"
                         android:layout_gravity="start|center"/>
 
-                    <ImageView
-                        android:layout_gravity="top|end"
-                        android:layout_width="100dp"
-                        android:layout_height="80dp"
-                        android:maxHeight="90dp"
-                        android:src="@drawable/j" />
-
                 </FrameLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -460,13 +439,6 @@
                         android:layout_height="wrap_content"
                         android:text="Study nature, love nature,\nclose to nature"
                         android:layout_gravity="start|center"/>
-
-                    <ImageView
-                        android:layout_gravity="top|end"
-                        android:layout_width="100dp"
-                        android:layout_height="80dp"
-                        android:maxHeight="90dp"
-                        android:src="@drawable/j" />
 
                 </FrameLayout>
             </androidx.cardview.widget.CardView>
@@ -498,13 +470,6 @@
                         android:text="Study nature, love nature,\nclose to nature"
                         android:layout_gravity="start|center"/>
 
-                    <ImageView
-                        android:layout_gravity="top|end"
-                        android:layout_width="100dp"
-                        android:layout_height="80dp"
-                        android:maxHeight="90dp"
-                        android:src="@drawable/j" />
-
                 </FrameLayout>
             </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -534,13 +499,6 @@
                     android:layout_height="wrap_content"
                     android:text="Study nature, love nature,\nclose to nature"
                     android:layout_gravity="start|center"/>
-
-                <ImageView
-                    android:layout_gravity="top|end"
-                    android:layout_width="100dp"
-                    android:layout_height="80dp"
-                    android:maxHeight="90dp"
-                    android:src="@drawable/j" />
 
             </FrameLayout>
         </androidx.cardview.widget.CardView>

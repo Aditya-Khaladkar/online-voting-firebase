@@ -28,9 +28,11 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 
+import java.time.LocalTime;
+
 public class Dashboard extends AppCompatActivity {
     DocumentReference documentReference;
-    TextView textView;
+    TextView firstname;
     FirebaseFirestore firebaseFirestore;
     FrameLayout layout_vote,layout_profile,layout_live,layout_help,layout_campaign,layout_result,layout_about;
     @Override
@@ -38,11 +40,32 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        textView=findViewById(R.id.textView);
+        firstname = findViewById(R.id.firstname);
         layout_vote=findViewById(R.id.layout_vote);
         layout_profile=findViewById(R.id.layout_profile);
         layout_live=findViewById(R.id.layout_live);
         layout_help=findViewById(R.id.layout_help);
+        layout_campaign = findViewById(R.id.layout_campaign);
+        layout_result = findViewById(R.id.layout_result);
+        layout_about = findViewById(R.id.layout_about);
+
+        layout_campaign.setOnClickListener(v -> {
+            Toast.makeText(this , "this feature is currently disabled", Toast.LENGTH_SHORT).show();
+        });
+
+        LocalTime time;
+        time = LocalTime.of(20,07);
+        if (time.isBefore(LocalTime.now())){
+            layout_result.setOnClickListener(v -> {
+
+            });
+        } else{
+            Toast.makeText(this, "Result has not been declared yet", Toast.LENGTH_SHORT).show();
+        }
+
+        layout_about.setOnClickListener(v -> {
+            Toast.makeText(this , "this feature is currently disabled", Toast.LENGTH_SHORT).show();
+        });
 
         layout_help.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -123,7 +146,7 @@ public class Dashboard extends AppCompatActivity {
             public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
                 if (value.exists()){
                     String name=value.getString("firstname");
-                    textView.setText(name);
+                    firstname.setText(name);
                 }
             }
         });
