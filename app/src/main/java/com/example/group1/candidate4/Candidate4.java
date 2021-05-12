@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.group1.R;
 import com.example.group1.VoteSuccess;
@@ -19,6 +20,8 @@ import com.google.firebase.firestore.Transaction;
 
 public class Candidate4 extends AppCompatActivity {
     Button javascript;
+    private long backPressedTime;
+    Toast backToast;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,5 +49,17 @@ public class Candidate4 extends AppCompatActivity {
                 finish();
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        if (backPressedTime + 1 > System.currentTimeMillis()) {
+            backToast.cancel();
+            super.onBackPressed();
+            return;
+        } else {
+            backToast = Toast.makeText(getBaseContext(), "Can't go back", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressedTime = System.currentTimeMillis();
     }
 }

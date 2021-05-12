@@ -53,21 +53,21 @@ public class Dashboard extends AppCompatActivity {
             Toast.makeText(this , "this feature is currently disabled", Toast.LENGTH_SHORT).show();
         });
 
-        LocalTime time;
-        time = LocalTime.of(20,07);
-        if (time.isBefore(LocalTime.now())){
-            layout_result.setOnClickListener(v -> {
 
-            });
-        } else{
-            Toast.makeText(this, "Result has not been declared yet", Toast.LENGTH_SHORT).show();
-        }
+        layout_result.setOnClickListener(v -> {
+                LocalTime time;
+                time = LocalTime.of(20,07);
+                if (time.isBefore(LocalTime.now())){
+                } else {
+                    Toast.makeText(this, "Result has not been declared yet", Toast.LENGTH_SHORT).show();
+                }
+        });
 
         layout_about.setOnClickListener(v -> {
             Toast.makeText(this , "this feature is currently disabled", Toast.LENGTH_SHORT).show();
         });
 
-        layout_help.setOnClickListener(new View.OnClickListener() {
+        layout_live.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Query query=FirebaseDatabase.getInstance().getReference().child("Used Aadhaar")
@@ -91,10 +91,10 @@ public class Dashboard extends AppCompatActivity {
             }
         });
 
-        layout_live.setOnClickListener(new View.OnClickListener() {
+        layout_help.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), LiveCounting.class));
+                startActivity(new Intent(getApplicationContext(), HelpCenter.class));
             }
         });
 
