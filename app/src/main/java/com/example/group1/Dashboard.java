@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -31,6 +32,9 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 import java.time.LocalTime;
 
 public class Dashboard extends AppCompatActivity {
+
+    public static final int TOAST_TIME = 5;
+
     DocumentReference documentReference;
     TextView firstname;
     FirebaseFirestore firebaseFirestore;
@@ -73,13 +77,14 @@ public class Dashboard extends AppCompatActivity {
                 Query query=FirebaseDatabase.getInstance().getReference().child("Used Aadhaar")
                         .orderByChild("usedaadhaar");
                 query.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @SuppressLint("WrongConstant")
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         if (snapshot.getChildrenCount() > 0) {
                             startActivity(new Intent(getApplicationContext(),LiveCounting.class));
                         }
                         else {
-                            Toast.makeText(Dashboard.this, "You haven't voted yet ! phele vote kar fir counting dekhna", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Dashboard.this, "You haven't voted yet !", TOAST_TIME).show();
                         }
                     }
 
@@ -111,7 +116,7 @@ public class Dashboard extends AppCompatActivity {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         if (snapshot.getChildrenCount()>0){
-                            Toast.makeText(Dashboard.this, "Bhosadika Ek Baar Vote Keya Na Kitne Bar Karega", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Dashboard.this, "Your Vote Is Already Recorded. You Cannot Vote 2nd Time", Toast.LENGTH_SHORT).show();
                         }
                         else{
                             startActivity(new Intent(getApplicationContext(),Aadhaar.class));

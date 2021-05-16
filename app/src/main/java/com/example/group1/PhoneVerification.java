@@ -77,7 +77,7 @@ public class PhoneVerification extends AppCompatActivity {
                                             otpIntent.putExtra("auth" , verificationId);
                                             startActivity(otpIntent);
                                         }
-                                    }, 5000);
+                                    }, 2000);
                                 }
                             });
                 }
