@@ -165,6 +165,9 @@ public class Registration extends AppCompatActivity {
                         }
                     });
                 }
+                else{
+                    Toast.makeText(Registration.this, "Enter Valid State and District", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

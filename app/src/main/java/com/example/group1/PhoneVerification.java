@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -68,24 +69,15 @@ public class PhoneVerification extends AppCompatActivity {
                                 @Override
                                 public void onCodeSent(final String verificationId, PhoneAuthProvider.ForceResendingToken forceResendingToken) {
                                     super.onCodeSent(verificationId, forceResendingToken);
-                                    //
-                                    Dialog dialog = new Dialog(PhoneVerification.this);
-                                    dialog.setContentView(R.layout.enterotp);
 
-                                    final EditText etVerifyCode = dialog.findViewById(R.id.etVerifyCode);
-                                    Button btnVerifyCode = dialog.findViewById(R.id.btnVerifyOTP);
-                                    btnVerifyCode.setOnClickListener(new View.OnClickListener() {
+                                    new Handler().postDelayed(new Runnable() {
                                         @Override
-                                        public void onClick(View v) {
-                                            String verificationCode = etVerifyCode.getText().toString();
-                                            if(verificationId.isEmpty()) return;
-                                            //create a credential
-                                            PhoneAuthCredential credential=PhoneAuthProvider.getCredential(verificationId,verificationCode);
-                                            signInUser(credential);
+                                        public void run() {
+                                            Intent otpIntent = new Intent(getApplicationContext(), EnterOtp.class);
+                                            otpIntent.putExtra("auth" , verificationId);
+                                            startActivity(otpIntent);
                                         }
-                                    });
-
-                                    dialog.show();
+                                    }, 5000);
                                 }
                             });
                 }
