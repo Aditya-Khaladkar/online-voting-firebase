@@ -181,7 +181,7 @@
                     android:id="@+id/regstate"
                     android:layout_width="match_parent"
                     android:layout_height="40sp"
-                    android:hint="Enter pincode"
+                    android:hint="Enter state"
                     android:layout_marginTop="5dp"
                     android:textSize="15sp"
                     />
@@ -199,7 +199,7 @@
                     android:id="@+id/regdistrict"
                     android:layout_width="match_parent"
                     android:layout_height="40sp"
-                    android:hint="Enter pincode"
+                    android:hint="Enter district"
                     android:layout_marginTop="5dp"
                     android:textSize="15sp"
                     />
