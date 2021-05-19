@@ -88,7 +88,7 @@ public class Registration extends AppCompatActivity {
                 else if (TextUtils.isEmpty(age)) {
                     regage.setError("This Field Can't be empty");
                 }
-                else if (Integer.parseInt(age) < 18) {
+                else if (Integer.parseInt(age) <= 18) {
                     regage.setError("Age is less not eligible for voting");
                 }
                 else if (TextUtils.isEmpty(aadhaar)) {
