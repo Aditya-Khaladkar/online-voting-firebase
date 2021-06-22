@@ -16,7 +16,8 @@
         <activity android:name=".Result" />
         <activity android:name=".helpcenter.HelpCenter" />
         <activity android:name=".VoteSuccess" />
-        <activity android:name=".livecounting.LiveCounting" />
+        <activity android:name=".livecounting.LiveCounting" >
+        </activity>
         <activity android:name=".candidate4.Candidate4" />
         <activity android:name=".candidate3.Candidate3" />
         <activity android:name=".candidate2.Candidate2" />

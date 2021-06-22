@@ -38,7 +38,7 @@ public class Candidate4 extends AppCompatActivity {
                     @Override
                     public Object apply(@NonNull Transaction transaction) throws FirebaseFirestoreException {
                         DocumentReference documentReference=firebaseFirestore.collection("Candidate")
-                                .document("Java Script");
+                                .document("Akash Chachere");
                         DocumentSnapshot documentSnapshot=transaction.get(documentReference);
                         long newVote=documentSnapshot.getLong("Vote")+1;
                         transaction.update(documentReference,"Vote",newVote);

@@ -38,7 +38,7 @@ public class Candidate2 extends AppCompatActivity {
                     @Override
                     public Object apply(@NonNull Transaction transaction) throws FirebaseFirestoreException {
                         DocumentReference documentReference = firebaseFirestore.collection("Candidate")
-                                .document("Python");
+                                .document("Piyush Hatewar");
                         DocumentSnapshot documentSnapshot = transaction.get(documentReference);
                         long newVote = documentSnapshot.getLong("Vote") + 1;
                         transaction.update(documentReference, "Vote", newVote);
