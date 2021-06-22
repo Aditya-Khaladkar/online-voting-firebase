@@ -75,8 +75,8 @@ public class Aadhaar extends AppCompatActivity {
                             });
                 }
                 else{
-                    Toast.makeText(Aadhaar.this, "Cheutya Samaj Rakha hai Kya ! Ye Cloud Database hai Bhosadika" +
-                            " Aadhaar Number Barabar Dal", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Aadhaar.this, "Your Aadhaar number don't match with the" +
+                            "registered aadhaar number", Toast.LENGTH_SHORT).show();
                 }
             }
         });
