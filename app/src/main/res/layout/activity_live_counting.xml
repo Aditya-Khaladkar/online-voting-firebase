@@ -218,7 +218,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
-                        android:text="Java"
+                        android:text="Aditya Khaladkar"
                         android:textSize="18sp"/>
 
                     <TextView
@@ -254,7 +254,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
-                        android:text="Python"
+                        android:text="Piyush Hatewar"
                         android:textSize="18sp"/>
 
 
@@ -290,7 +290,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
-                        android:text="React Native"
+                        android:text="Prathamesh Telmasre"
                         android:textSize="18sp"/>
 
                     <TextView
@@ -325,7 +325,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
-                        android:text="Java Script"
+                        android:text="Akash Chachere"
                         android:textSize="18sp"/>
 
                     <TextView

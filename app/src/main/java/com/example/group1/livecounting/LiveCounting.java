@@ -29,7 +29,7 @@ public class LiveCounting extends AppCompatActivity {
 
         firebaseFirestore=FirebaseFirestore.getInstance();
         documentReference=firebaseFirestore.collection("Candidate")
-                .document("Java");
+                .document("Aditya Khaladkar");
         documentReference.addSnapshotListener(new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
@@ -41,7 +41,7 @@ public class LiveCounting extends AppCompatActivity {
         });
 
         documentReference=firebaseFirestore.collection("Candidate")
-                .document("Python");
+                .document("Piyush Hatewar");
         documentReference.addSnapshotListener(new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
@@ -53,7 +53,7 @@ public class LiveCounting extends AppCompatActivity {
         });
 
         documentReference=firebaseFirestore.collection("Candidate")
-                .document("React Native");
+                .document("Prathamesh Telmasre");
         documentReference.addSnapshotListener(new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
@@ -65,7 +65,7 @@ public class LiveCounting extends AppCompatActivity {
         });
 
         documentReference=firebaseFirestore.collection("Candidate")
-                .document("Java Script");
+                .document("Akash Chachere");
         documentReference.addSnapshotListener(new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
