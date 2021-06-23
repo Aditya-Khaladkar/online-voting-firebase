@@ -92,7 +92,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="java"
+                            android:text="Aditya Khaladkar"
                             android:paddingLeft="10dp"/>
 
                     </LinearLayout>
@@ -114,7 +114,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="python"
+                            android:text="Piyush Hatewar"
                             android:paddingLeft="10dp"/>
 
                     </LinearLayout>
@@ -136,7 +136,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="react native"
+                            android:text="Prathamesh Telmasre"
                             android:paddingLeft="10dp"/>
 
                     </LinearLayout>
@@ -158,7 +158,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="java script"
+                            android:text="Akash Chachere"
                             android:paddingLeft="10dp"/>
 
                     </LinearLayout>
