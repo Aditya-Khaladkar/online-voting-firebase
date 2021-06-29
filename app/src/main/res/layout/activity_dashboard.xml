@@ -304,13 +304,6 @@
                         android:text="Click here\nto visit profile page "
                         android:layout_gravity="start|center"/>
 
-                    <ImageView
-                        android:layout_gravity="top|end"
-                        android:layout_width="100dp"
-                        android:layout_height="80dp"
-                        android:maxHeight="90dp"
-                        android:src="@drawable/profile2" />
-
                 </FrameLayout>
             </androidx.cardview.widget.CardView>
 
@@ -464,36 +457,6 @@
 
                 </FrameLayout>
             </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="15dp"
-            app:cardPreventCornerOverlap="true"
-            android:layout_marginTop="20dp">
-
-            <FrameLayout
-                android:id="@+id/layout_about"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:minHeight="100dp"
-                android:background="@drawable/profile_gradient"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:textColor="#000"
-                    android:text="About"/>
-                <TextView
-                    android:layout_marginTop="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Study nature, love nature,\nclose to nature"
-                    android:layout_gravity="start|center"/>
-
-            </FrameLayout>
-        </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 

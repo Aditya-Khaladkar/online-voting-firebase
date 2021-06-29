@@ -38,7 +38,7 @@ public class Dashboard extends AppCompatActivity {
     DocumentReference documentReference;
     TextView firstname;
     FirebaseFirestore firebaseFirestore;
-    FrameLayout layout_vote,layout_profile,layout_live,layout_help,layout_campaign,layout_result,layout_about;
+    FrameLayout layout_vote,layout_profile,layout_live,layout_help,layout_campaign,layout_result;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,24 +51,20 @@ public class Dashboard extends AppCompatActivity {
         layout_help=findViewById(R.id.layout_help);
         layout_campaign = findViewById(R.id.layout_campaign);
         layout_result = findViewById(R.id.layout_result);
-        layout_about = findViewById(R.id.layout_about);
 
         layout_campaign.setOnClickListener(v -> {
-            Toast.makeText(this , "this feature is currently disabled", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(getApplicationContext(),Campaign.class));
         });
 
 
         layout_result.setOnClickListener(v -> {
                 LocalTime time;
-                time = LocalTime.of(20,07);
+                time = LocalTime.of(9,15);
                 if (time.isBefore(LocalTime.now())){
+                    startActivity(new Intent(getApplicationContext(),Result.class));
                 } else {
                     Toast.makeText(this, "Result has not been declared yet", Toast.LENGTH_SHORT).show();
                 }
-        });
-
-        layout_about.setOnClickListener(v -> {
-            Toast.makeText(this , "this feature is currently disabled", Toast.LENGTH_SHORT).show();
         });
 
         layout_live.setOnClickListener(new View.OnClickListener() {
