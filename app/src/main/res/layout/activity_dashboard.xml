@@ -332,7 +332,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Click here\nto start voting "
+                        android:text="Click here\nto see campaign "
                         android:layout_gravity="start|center"/>
 
                 </FrameLayout>
@@ -362,7 +362,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Study nature, love nature,\nclose to nature"
+                        android:text="click here\nto start voting"
                         android:layout_gravity="start|center"/>
 
                 </FrameLayout>
@@ -392,7 +392,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Study nature, love nature,\nclose to nature"
+                        android:text="click here\nto see live counting"
                         android:layout_gravity="start|center"/>
 
                 </FrameLayout>
@@ -422,7 +422,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Study nature, love nature,\nclose to nature"
+                        android:text="click here\nto see result"
                         android:layout_gravity="start|center"/>
 
                 </FrameLayout>
@@ -452,7 +452,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Study nature, love nature,\nclose to nature"
+                        android:text="click here\nfor help"
                         android:layout_gravity="start|center"/>
 
                 </FrameLayout>
